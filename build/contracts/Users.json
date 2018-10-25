@@ -1,0 +1,683 @@
+{
+  "contractName": "Users",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "merchants_list",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "clients_list",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "token",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5061025b806100206000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630fa63ad21461005c578063832eb837146100c9578063fc0c546a14610136575b600080fd5b34801561006857600080fd5b506100876004803603810190808035906020019092919050505061018d565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100d557600080fd5b506100f4600480360381019080803590602001909291905050506101cb565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561014257600080fd5b5061014b610209565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60028181548110151561019c57fe5b906000526020600020016000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6003818154811015156101da57fe5b906000526020600020016000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600460009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a723058204cc68ba15c8243b67e1ba348656fa49ed1b991b7f3f65e84cdb594a9cb565aca0029",
+  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630fa63ad21461005c578063832eb837146100c9578063fc0c546a14610136575b600080fd5b34801561006857600080fd5b506100876004803603810190808035906020019092919050505061018d565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100d557600080fd5b506100f4600480360381019080803590602001909291905050506101cb565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561014257600080fd5b5061014b610209565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60028181548110151561019c57fe5b906000526020600020016000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6003818154811015156101da57fe5b906000526020600020016000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600460009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a723058204cc68ba15c8243b67e1ba348656fa49ed1b991b7f3f65e84cdb594a9cb565aca0029",
+  "sourceMap": "53:294:2:-;;;317:28;8:9:-1;5:2;;;30:1;27;20:12;5:2;317:28:2;53:294;;;;;;",
+  "deployedSourceMap": "53:294:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;215:31;;8:9:-1;5:2;;;30:1;27;20:12;5:2;215:31:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;252:29;;8:9:-1;5:2;;;30:1;27;20:12;5:2;252:29:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;288:22;;8:9:-1;5:2;;;30:1;27;20:12;5:2;288:22:2;;;;;;;;;;;;;;;;;;;;;;;;;;;215:31;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;252:29::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;288:22::-;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.25;\n\nimport \"./TypeToken.sol\";\n\ncontract Users{\n\n    struct Client{\n\n    }\n\n    struct Merchant{\n\n    }\n\n    mapping(address => Merchant) merchants;\n    mapping(address => Client) clients;\n\n    address[] public merchants_list;\n    address[] public clients_list;\n\n    TypeToken public token;\n\n    constructor() public{\n\n    }\n}",
+  "sourcePath": "/Users/sheraz/Clients/Robinson/contracts/Users.sol",
+  "ast": {
+    "absolutePath": "/Users/sheraz/Clients/Robinson/contracts/Users.sol",
+    "exportedSymbols": {
+      "Users": [
+        567
+      ]
+    },
+    "id": 568,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 543,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".25"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "absolutePath": "/Users/sheraz/Clients/Robinson/contracts/TypeToken.sol",
+        "file": "./TypeToken.sol",
+        "id": 544,
+        "nodeType": "ImportDirective",
+        "scope": 568,
+        "sourceUnit": 542,
+        "src": "26:25:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 567,
+        "linearizedBaseContracts": [
+          567
+        ],
+        "name": "Users",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Users.Client",
+            "id": 545,
+            "members": [],
+            "name": "Client",
+            "nodeType": "StructDefinition",
+            "scope": 567,
+            "src": "74:21:2",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Users.Merchant",
+            "id": 546,
+            "members": [],
+            "name": "Merchant",
+            "nodeType": "StructDefinition",
+            "scope": 567,
+            "src": "101:23:2",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 550,
+            "name": "merchants",
+            "nodeType": "VariableDeclaration",
+            "scope": 567,
+            "src": "130:38:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Merchant_$546_storage_$",
+              "typeString": "mapping(address => struct Users.Merchant)"
+            },
+            "typeName": {
+              "id": 549,
+              "keyType": {
+                "id": 547,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "138:7:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "130:28:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Merchant_$546_storage_$",
+                "typeString": "mapping(address => struct Users.Merchant)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 548,
+                "name": "Merchant",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 546,
+                "src": "149:8:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Merchant_$546_storage_ptr",
+                  "typeString": "struct Users.Merchant"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 554,
+            "name": "clients",
+            "nodeType": "VariableDeclaration",
+            "scope": 567,
+            "src": "174:34:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Client_$545_storage_$",
+              "typeString": "mapping(address => struct Users.Client)"
+            },
+            "typeName": {
+              "id": 553,
+              "keyType": {
+                "id": 551,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "182:7:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "174:26:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Client_$545_storage_$",
+                "typeString": "mapping(address => struct Users.Client)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 552,
+                "name": "Client",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 545,
+                "src": "193:6:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Client_$545_storage_ptr",
+                  "typeString": "struct Users.Client"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 557,
+            "name": "merchants_list",
+            "nodeType": "VariableDeclaration",
+            "scope": 567,
+            "src": "215:31:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_address_$dyn_storage",
+              "typeString": "address[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 555,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "215:7:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "id": 556,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "215:9:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                "typeString": "address[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 560,
+            "name": "clients_list",
+            "nodeType": "VariableDeclaration",
+            "scope": 567,
+            "src": "252:29:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_address_$dyn_storage",
+              "typeString": "address[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 558,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "252:7:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "id": 559,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "252:9:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                "typeString": "address[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 562,
+            "name": "token",
+            "nodeType": "VariableDeclaration",
+            "scope": 567,
+            "src": "288:22:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_TypeToken_$541",
+              "typeString": "contract TypeToken"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 561,
+              "name": "TypeToken",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 541,
+              "src": "288:9:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_TypeToken_$541",
+                "typeString": "contract TypeToken"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 565,
+              "nodeType": "Block",
+              "src": "337:8:2",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 566,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 563,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "328:2:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 564,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "337:0:2"
+            },
+            "scope": 567,
+            "src": "317:28:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 568,
+        "src": "53:294:2"
+      }
+    ],
+    "src": "0:347:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/sheraz/Clients/Robinson/contracts/Users.sol",
+    "exportedSymbols": {
+      "Users": [
+        567
+      ]
+    },
+    "id": 568,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 543,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".25"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "absolutePath": "/Users/sheraz/Clients/Robinson/contracts/TypeToken.sol",
+        "file": "./TypeToken.sol",
+        "id": 544,
+        "nodeType": "ImportDirective",
+        "scope": 568,
+        "sourceUnit": 542,
+        "src": "26:25:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 567,
+        "linearizedBaseContracts": [
+          567
+        ],
+        "name": "Users",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Users.Client",
+            "id": 545,
+            "members": [],
+            "name": "Client",
+            "nodeType": "StructDefinition",
+            "scope": 567,
+            "src": "74:21:2",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Users.Merchant",
+            "id": 546,
+            "members": [],
+            "name": "Merchant",
+            "nodeType": "StructDefinition",
+            "scope": 567,
+            "src": "101:23:2",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 550,
+            "name": "merchants",
+            "nodeType": "VariableDeclaration",
+            "scope": 567,
+            "src": "130:38:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Merchant_$546_storage_$",
+              "typeString": "mapping(address => struct Users.Merchant)"
+            },
+            "typeName": {
+              "id": 549,
+              "keyType": {
+                "id": 547,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "138:7:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "130:28:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Merchant_$546_storage_$",
+                "typeString": "mapping(address => struct Users.Merchant)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 548,
+                "name": "Merchant",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 546,
+                "src": "149:8:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Merchant_$546_storage_ptr",
+                  "typeString": "struct Users.Merchant"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 554,
+            "name": "clients",
+            "nodeType": "VariableDeclaration",
+            "scope": 567,
+            "src": "174:34:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Client_$545_storage_$",
+              "typeString": "mapping(address => struct Users.Client)"
+            },
+            "typeName": {
+              "id": 553,
+              "keyType": {
+                "id": 551,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "182:7:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "174:26:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Client_$545_storage_$",
+                "typeString": "mapping(address => struct Users.Client)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 552,
+                "name": "Client",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 545,
+                "src": "193:6:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Client_$545_storage_ptr",
+                  "typeString": "struct Users.Client"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 557,
+            "name": "merchants_list",
+            "nodeType": "VariableDeclaration",
+            "scope": 567,
+            "src": "215:31:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_address_$dyn_storage",
+              "typeString": "address[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 555,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "215:7:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "id": 556,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "215:9:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                "typeString": "address[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 560,
+            "name": "clients_list",
+            "nodeType": "VariableDeclaration",
+            "scope": 567,
+            "src": "252:29:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_address_$dyn_storage",
+              "typeString": "address[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 558,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "252:7:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "id": 559,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "252:9:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                "typeString": "address[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 562,
+            "name": "token",
+            "nodeType": "VariableDeclaration",
+            "scope": 567,
+            "src": "288:22:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_TypeToken_$541",
+              "typeString": "contract TypeToken"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 561,
+              "name": "TypeToken",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 541,
+              "src": "288:9:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_TypeToken_$541",
+                "typeString": "contract TypeToken"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 565,
+              "nodeType": "Block",
+              "src": "337:8:2",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 566,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 563,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "328:2:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 564,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "337:0:2"
+            },
+            "scope": 567,
+            "src": "317:28:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 568,
+        "src": "53:294:2"
+      }
+    ],
+    "src": "0:347:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.25+commit.59dbf8f1.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x83aa19d3253da2c348a94d554c4eb0af7573b5e4",
+      "transactionHash": "0x80ebf10cd2fa31a25e58051853812537cd0ba028e0b6845e90dcd118db0c4085"
+    }
+  },
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-10-25T13:00:17.427Z"
+}
